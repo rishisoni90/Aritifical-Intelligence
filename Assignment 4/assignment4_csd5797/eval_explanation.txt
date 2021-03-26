@@ -1,0 +1,3 @@
+For depth limited search:
+
+Eval function calculates utility value when the depth is entered by user is reached. It assigns a value based on the game state. For each four occurrences horizontally, vertivally and diagonally the value is increased by 1. Similarly, for each three occurrences vertically and horizontally the value is increased by 0.80 and an empty space diagonally the value is increased by 0.70. For each two occurrences vertically and horizontally the value is increased by 0.15. For other player, it takes the negative of the values mentioned above. Then the eval function sums all the values and return the value.
