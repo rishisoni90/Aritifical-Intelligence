@@ -1,0 +1,17 @@
+(operator
+ move
+ (params
+  (<b> Object) (<x> Object) (<y> Object))
+ (preconds
+  (on <b> <x>) (clear <b>) (clear <y>) (small <b> <y>) (disk <b>) (disk <y>))
+ (effects
+  (del on <b> <x>) (clear <x>) (on <b> <y>) (del clear <y>)))
+
+(operator
+ movetopeg
+ (params
+  (<b> Object) (<x> Object) (<y> Object))
+ (preconds
+  (on <b> <x>) (clear <b>) (clear <y>) (disk <b>) (peg <y>))
+ (effects
+  (del on <b> <x>) (clear <x>) (on <b> <y>) (del clear <y>)))

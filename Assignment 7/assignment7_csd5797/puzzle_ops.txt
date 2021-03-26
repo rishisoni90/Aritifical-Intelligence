@@ -1,0 +1,8 @@
+(operator
+move
+(params
+(<a> Object) (<x> Object) (<y> Object))
+(preconds
+(tile <a>) (pos <a> <x>) (location <x>) (location <y>) (free <y>) (adj <x> <y>))
+(effects
+(pos <a> <y>) (del pos <a> <x>) (free <x>) (del free <y>)))
